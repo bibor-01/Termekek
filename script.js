@@ -11,12 +11,12 @@ $(function () {
       for (let item in value) {
         txt += "<td>" + value[item] + "</td>";
       }
-      txt += "<td id='gomb'><button id='" + index + "'>Módosít</button></td>";
+      txt += "<td class='gomb'><button id='" + index + "'>Módosít</button></td>";
       txt += "</tr>";
     });
 
     $("section table").html(txt);
-    $("#gomb").click(function () {
+    $(".gomb").click(function () {
       console.log("rákattintottam");
     });
   }
